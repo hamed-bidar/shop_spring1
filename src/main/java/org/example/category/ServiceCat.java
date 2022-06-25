@@ -1,11 +1,13 @@
 package org.example.category;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
 @AllArgsConstructor
+@Data
 
 public class ServiceCat implements IServiceCat {
     private final CatRepo repository;
@@ -30,6 +32,7 @@ public class ServiceCat implements IServiceCat {
 
     @Override
     public Category getById(Long id) {
+
         return repository.findById(id).orElseThrow();
     }
 

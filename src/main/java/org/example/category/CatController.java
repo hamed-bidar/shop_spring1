@@ -22,8 +22,8 @@ public class CatController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @GetMapping("ver 1/{id}")
-    public ResponseEntity<CatDTO> getById(@RequestBody Long id){
+    @GetMapping("/ver 1/{id}")
+    public ResponseEntity<CatDTO> getById(@PathVariable Long id){
         Category category =service.getById(id);
         CatDTO catDTO = mapper.toCategoryDTO(category);
         return ResponseEntity.ok(catDTO) ;

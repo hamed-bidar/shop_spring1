@@ -1,6 +1,7 @@
 package org.example.Product;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/product")
 @AllArgsConstructor
-
+@Data
 public class ProdController {
 
     private final IServiceProd service;
@@ -25,8 +26,8 @@ public class ProdController {
 
     }
 
-    @GetMapping("ver 1 /{id}")
-    public ResponseEntity<ProdDTO> getById(@RequestBody Long id) {
+    @GetMapping("/ver 1 /{id}")
+    public ResponseEntity<ProdDTO> getById(@PathVariable Long id) {
 
         Product product = service.getById(id);
         ProdDTO prodDTO = mapper.toProductDTO(product);
