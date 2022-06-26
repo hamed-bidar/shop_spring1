@@ -1,15 +1,1 @@
-server:
-  port: 8090
-
-spring:
-    datasource:
-       url: jdbc:postgresql://localhost:5432/shop_spring1
-       username: postgres
-       password: 123
-
-
-    jpa:
-      database-platform: org.hibernate.dialect.PostgreSQLDialect
-      database: POSTGRESQL
-      hibernate:
-       ddl-auto: update
+server:  port: 8090spring:  datasource:    url: jdbc:postgresql://localhost:5432/shop_spring1    username: postgres    password: 123  jpa:    database-platform: org.hibernate.dialect.PostgreSQLDialect    database: POSTGRESQL    hibernate:      ddl-auto: update

@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 
 public class CatController {
-    private final IServiceCat service;
+    private final ICatService service;
     private final CatMapper mapper;
 
     @PostMapping("/ver 1")

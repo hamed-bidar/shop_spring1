@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 public class ProdController {
 
-    private final IServiceProd service;
+    private final IProdService service;
     private final ProductMapper mapper;
 
     @PostMapping("/ver 1")

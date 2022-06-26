@@ -1,10 +1,8 @@
 package org.example.Product;
 
-import org.example.category.Category;
-
 import java.util.List;
 
-public interface IServiceProd {
+public interface IProdService {
 
     Product save(Product bank);
 

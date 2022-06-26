@@ -9,7 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 
-public class ServiceCat implements IServiceCat {
+public class CatService implements ICatService {
     private final CatRepo repository;
 
     @Override

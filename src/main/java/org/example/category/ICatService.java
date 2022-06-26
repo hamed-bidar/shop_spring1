@@ -2,7 +2,7 @@ package org.example.category;
 
 import java.util.List;
 
-public interface IServiceCat {
+public interface ICatService {
 
     Category save(Category bank);
 

@@ -2,16 +2,16 @@ package org.example.Product;
 
 import lombok.AllArgsConstructor;
 import org.example.category.Category;
-import org.example.category.IServiceCat;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.example.category.ICatService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 @AllArgsConstructor
-public class ServiceProd implements IServiceProd {
+public class ProdService implements IProdService {
     private final ProdRepo repository;
-    private final IServiceCat categoryIService ;
+    private final ICatService categoryIService ;
 
 
     @Override

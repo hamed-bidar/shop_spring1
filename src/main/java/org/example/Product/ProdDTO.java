@@ -2,13 +2,15 @@ package org.example.Product;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.example.Common.BaseDTO;
+import org.example.Common.BaseEntity;
 import org.example.category.CatDTO;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Data
-public class ProdDTO {
+public class ProdDTO extends BaseDTO {
 
 
     @ApiModelProperty(required = false, hidden = true)
